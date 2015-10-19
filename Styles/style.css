@@ -1,0 +1,400 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: \201C \201D \2018 \2019;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -.5em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, figure {
+  margin: 0;
+}
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.submit, .submit:active, .submit:focus {
+  outline: none;
+}
+
+body {
+  font-family: 'Lora', serif;
+  background: url("../Images/potholes.png") no-repeat fixed center;
+  background-size: 200% auto;
+}
+
+@media all and (max-width: 480px) {
+  body {
+    background: #F38E19;
+  }
+}
+
+.wrapper {
+  max-width: 1000px;
+  padding-bottom: 0.5%;
+  padding-top: 2.5%;
+  text-align: center;
+  background: #F38E19;
+  margin: 2% auto;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: #FFFAFA;
+  font-size: 4rem;
+  margin: 0;
+}
+
+h1 p {
+  font-weight: 700;
+}
+
+.toronto {
+  width: 50%;
+  padding-bottom: 2%;
+}
+
+h2 {
+  color: #FFFAFA;
+}
+
+h2 span, h2 p {
+  color: #444;
+  margin-bottom: 0;
+}
+
+.asterix {
+  font-size: 1.5rem;
+  font-style: normal;
+  color: #444;
+}
+
+.asterix:hover {
+  cursor: pointer;
+}
+
+.methods {
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  width: 40%;
+  z-index: 999;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.9);
+  color: white;
+  font-size: 1rem;
+  padding: 1%;
+  border-radius: 6px;
+}
+
+.methods p {
+  margin-top: 0;
+}
+
+.showhim:hover .showme {
+  display: block;
+}
+
+.hide {
+  display: none;
+  font-style: normal;
+  font-size: 0.1em;
+}
+
+.map {
+  height: 70vh;
+  margin: 5%;
+}
+
+@media all and (max-width: 480px) {
+  .map {
+    height: 30vh;
+  }
+}
+
+.intro {
+  color: #444;
+}
+
+.img img {
+  max-height: 100px;
+  max-width: 200px;
+}
+
+.resultShowOne {
+  background: url("../Images/witewall_3.png");
+  opacity: 0.8;
+  width: 50%;
+  color: #444;
+  display: none;
+  margin: 5% auto;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.resultShowOne p, .resultShowOne a {
+  color: #444;
+}
+
+.showOnLoad {
+  margin-top: 3%;
+  display: none;
+}
+
+.showOnLoad h2 {
+  color: #444;
+}
+
+.show {
+  display: block;
+}
+
+button {
+  background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+  background-color: #ededed;
+  border-radius: 6px;
+  border: 1px solid #ffaa22;
+  display: inline-block;
+  color: #333333;
+  text-shadow: 0px 1px 0px #ffee66;
+  font-size: 1rem;
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+  background-color: #dfdfdf;
+}
+
+input {
+  font-size: 1rem;
+}
+
+input::-webkit-input-placeholder {
+  font-size: 1rem;
+}
+
+input:focus {
+  background-color: #FFFAFA;
+}
+
+#close, #where {
+  color: #3EB80F;
+  text-transform: capitalize;
+}
+
+footer {
+  background: url("../Images/oavv3DC.jpg");
+  text-align: center;
+  padding: 0.1px;
+  color: #FFFAFA;
+}
+
+footer a {
+  text-decoration: none;
+  color: #FFFAFA;
+}
+
+@media all and (max-width: 480px) {
+  footer {
+    display: none;
+  }
+}
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  /* make things invisible upon start */
+  -webkit-animation: fadeIn ease-in 1;
+  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.7s;
+  -moz-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pothole city</title>
+	<link href='https://fonts.googleapis.com/css?family=Lora:400,700,700italic' rel='stylesheet' type='text/css'>	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="Styles/style.css">
+	<script src='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.js'></script>
+	<link href='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.css' rel='stylesheet' />
+	<link rel="shortcut icon" href="./Images/favicon.ico"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body ontouchstart=""><!--  add loading class, take off once loaded ??? -->
+<section class="wrapper">
+	<h1>Look out for potholes,</h1>
+	<img class="toronto fade-in two" src="Images/toronto2.png" alt="Toronto graphic with last 0 represented by pothole">
+
+	<h2>See 
+		<span id="counting"><i class="fa fa-refresh fa-spin"></i></span>
+		potholes recently<span class="asterix showhim"><div class="methods showme"><p> This site uses the City of Toronto’s Open311 API, which retrieves service requests for potholes and graffiti calls. It pulls 1,000 calls or all records from the past 90 days, whichever is smaller. The results have been filtered here to only show pothole files that have a status other than closed, meaning pothole files with an open or null status are displayed.</p></div>*</span> reported in Toronto on the map below.</h2>
+
+	<div class="showOnLoad fade-in two">
+		<h2>Or check how many are near an address:</h2>
+			<form class="search_form">
+				<input type="search" placeholder="i.e. 1 Yonge Street" name="" id="search_input" required>
+				<button>Find potholes</button>
+			</form>
+	</div>
+
+	<!-- map -->
+	<div class="map" id="map"></div>
+	<!-- results -->
+	<div class="resultShowOne" id="resultShowOne">
+				<h3>There are <span id="close"></span> potholes, within 500 metres of <span id="where">you</span>.</p> Try a new address or click potholes on the map to see more information.</h3>
+				<a href="https://twitter.com/share" class="twitter-share-button" data-text="Check how many potholes have recently been reported near you in Toronto, via @CarysMills">Tweet</a>
+	</div>
+
+</section> <!-- end of .wrapper	 -->
+
+	<footer id="footer">
+		<p>Created by <a href="http://carysmills.com">Carys Mills</a>, using Mapbox and the City of Toronto’s Open311 APIs.</p>
+	</footer>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="JS/script.js"></script>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<!-- 	CREDITS: 
+	background on footer:
+	http://thepatternlibrary.com/
+
+	background on popup:
+	http://subtlepatterns.com/
+
+	pot hole icons on background and faivcon:
+	- bullet hole by Dennis Happé from the Noun Project
+    - Pothole, By Iconathon, US 311 Collection
+    - work in progress by Gleb Khorunzhiy from the Noun Project
+    - Traffic Light by parkjisun from the Noun Project -->
+</body>
+</html>

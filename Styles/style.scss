@@ -1,0 +1,207 @@
+@import "setup";
+
+.submit, .submit:active, .submit:focus {
+	outline: none;
+}
+
+body {
+ font-family: 'Lora', serif;
+ background: url("../Images/potholes.png") no-repeat fixed center;
+ background-size: 200% auto; 
+}
+
+@media all and (max-width: 480px) {
+	body {
+	background: #F38E19;
+		}
+	}
+
+.wrapper {
+	max-width: 1000px;
+	padding-bottom: 0.5%;
+	padding-top: 2.5%;
+	text-align: center;
+	background: #F38E19;
+	margin: 2% auto;
+	border-radius: 10px;
+}
+
+h1 {
+	text-align: center;
+	color: #FFFAFA;
+	font-size: 4rem;
+	margin: 0;
+	p {
+		font-weight: 700;
+	}
+}
+
+.toronto {
+	width: 50%;
+	padding-bottom: 2%;
+}
+
+h2 {
+	color: #FFFAFA;
+	span, p {
+		color: #444;
+		margin-bottom: 0;
+	}
+}
+
+.asterix {
+	font-size: 1.5rem;
+	font-style: normal;
+	color: #444;
+	&:hover {
+	cursor: pointer;
+	}
+}
+
+.methods {
+	display: none;
+	position: absolute;
+	top: 25%;
+	left: 15%;
+	width: 40%;
+	z-index: 999;
+	text-align: left;
+	background: rgba(255, 255, 255, 0.9);
+	color: white;
+	font-size: 1rem;
+	padding: 1%;
+	border-radius: 6px;
+	p {
+		margin-top: 0;
+	}
+}
+
+.showhim:hover .showme{
+display : block;
+}
+
+.showhim:active .showme{
+display : block;
+}
+
+.hide {
+	display: none;
+	font-style: normal;
+	font-size:0.1em
+}
+
+.map { 
+	height: 70vh;
+	margin: 5%;
+}
+
+@media all and (max-width: 480px) {
+	.map {
+	height: 30vh;
+		}
+	}
+
+.intro {
+	color: #444;
+}
+
+.img img {
+	max-height: 100px;
+	max-width: 200px;
+}
+
+.resultShowOne {
+	background: url("../Images/witewall_3.png");
+	opacity: 0.8;
+	width: 50%;
+	color: #444;
+	display: none;
+	margin: 5% auto;
+	border-radius: 10px;
+	padding: 10px;
+	p, a {
+		color: #444;
+	}
+}
+
+.showOnLoad {
+	margin-top: 3%;
+	display: none;
+	h2 {
+	color: #444;
+	}
+} 
+
+.show {
+	display: block;
+}
+
+button {
+	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+	background-color:#ededed;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	color:#333333;
+	text-shadow:0px 1px 0px #ffee66;
+	font-size: 1rem;
+}
+button:hover {
+	background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+	background-color:#dfdfdf;
+}
+
+input {
+ 	font-size: 1rem;
+}
+
+input::-webkit-input-placeholder {
+ 	font-size: 1rem;
+}
+
+input:focus {
+    background-color: #FFFAFA;
+}
+
+#close, #where {
+	color: #3EB80F;
+	text-transform: capitalize;
+}
+
+footer {
+	background: url("../Images/oavv3DC.jpg");
+	text-align: center;
+	padding: 0.1px;
+	color: #FFFAFA;
+	a {
+		text-decoration: none;
+		color: #FFFAFA;
+	}
+}
+
+@media all and (max-width: 480px) {
+	footer {
+	display: none;
+		}
+	}
+
+/* make keyframes that tell the start state and the end state of our object */
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:0.7s;
+    -moz-animation-duration:0.7s;
+    animation-duration:0.7s;
+}
